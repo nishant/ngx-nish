@@ -1,0 +1,25 @@
+<div *ngIf="!source else videoPlayer" class="undefined-src">
+  {{ SOURCE_UNDEFINED_ERROR_TEXT }}
+</div>
+
+<ng-template #videoPlayer>
+  <div class="video-player">
+    <h1 *ngIf="title" class="video-title">{{ title }}</h1>
+    <div *ngIf="thumbnail; then videoWithThumbnail else video"></div>
+    <p *ngIf="description" class="video-description">{{ description }}</p>
+  </div>
+</ng-template>
+
+<ng-template #videoWithThumbnail>
+  <video class="video" controls [poster]="thumbnail">
+    <source class="video-source" [src]="source">
+    {{ UNSUPPORTED_ERROR_TEXT }}
+  </video>
+</ng-template>
+
+<ng-template #video>
+  <video class="video" controls>
+    <source class="video-source" [src]="source">
+    {{ UNSUPPORTED_ERROR_TEXT }}
+  </video>
+</ng-template>
