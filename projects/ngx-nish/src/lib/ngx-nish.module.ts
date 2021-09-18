@@ -50,7 +50,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     CheckboxComponent,
     ModalComponent,
     RadioButtonComponent,
-    RibbonComponent
+    RibbonComponent,
+    BannerComponent
   ]
 })
 export class NgxNishModule { }
