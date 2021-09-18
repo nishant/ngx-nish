@@ -8,6 +8,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PageSectionDividerComponent } from './components/page-section-divider/page-section-divider.component';
 import { PageSectionComponent } from './components/page-section/page-section.component';
 import {RouterModule} from "@angular/router";
+import { ButtonComponent } from './components/button/button.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { RadioButtonComponent } from './components/radio-button/radio-button.component';
+import { RibbonComponent } from './components/ribbon/ribbon.component';
 
 
 @NgModule({
@@ -18,7 +23,12 @@ import {RouterModule} from "@angular/router";
     BreadcrumbsComponent,
     FooterComponent,
     PageSectionDividerComponent,
-    PageSectionComponent
+    PageSectionComponent,
+    ButtonComponent,
+    CheckboxComponent,
+    ModalComponent,
+    RadioButtonComponent,
+    RibbonComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +41,12 @@ import {RouterModule} from "@angular/router";
     BreadcrumbsComponent,
     FooterComponent,
     PageSectionDividerComponent,
-    PageSectionComponent
+    PageSectionComponent,
+    ButtonComponent,
+    CheckboxComponent,
+    ModalComponent,
+    RadioButtonComponent,
+    RibbonComponent
   ]
 })
 export class NgxNishModule { }
