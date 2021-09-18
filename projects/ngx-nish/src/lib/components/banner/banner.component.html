@@ -1,0 +1,6 @@
+<mat-toolbar class="mat-elevation-z8">
+  <div *ngIf="!isTextArray()" class="text-content">{{ text }}</div>
+  <div *ngIf="isTextArray()" class="text-container">
+    <div *ngFor="let item of text" class="text-content">{{ item }}</div>
+  </div>
+</mat-toolbar>
