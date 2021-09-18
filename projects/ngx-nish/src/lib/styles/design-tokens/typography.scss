@@ -1,5 +1,11 @@
-$primary-font: 'Arial', sans-serif;
-$secondary-font: 'Arial Narrow', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
 
 $font-size-xsmall: 8px;
 $font-size-small: 12px;
