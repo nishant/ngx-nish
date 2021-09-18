@@ -1,0 +1,10 @@
+<div class="breadcrumbs">
+  <ng-container *ngFor="let breadcrumb of breadcrumbs">
+    <a *ngIf="breadcrumb.path !== null" [routerLink]="breadcrumb.path" class="breadcrumbs--label">
+      {{ breadcrumb.label }}
+    </a>
+    <span *ngIf="breadcrumb.path === null" class="breadcrumbs--label">
+      {{ breadcrumb.label }}
+    </span>
+  </ng-container>
+</div>
